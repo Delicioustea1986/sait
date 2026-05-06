@@ -1,0 +1,21 @@
+{% extends "baza.html" %}
+
+{% block title %}Твой аватар{% endblock %}
+
+{% block content %}
+<div class="card mx-auto" style="width: 22rem;">
+    <img src="{{ url_for('static', filename='uploads/' + user.avatar) }}" class="card-img-top">
+
+    <div class="card-body text-center">
+        <h4>{{ user.username }}</h4>
+
+        <a href="/upload" class="btn btn-primary mt-2">Загрузить свою фотографию</a>
+    </div>
+</div>
+<a href="{{ url_for('krasivoview') }}" class="btn btn-secondary">
+    К котику
+</a>
+<a href="{{ url_for('MikleJordan') }}" class="btn btn-primary mt-3">
+    Go to the legendary player from basketboll 
+</a>
+{% endblock %}

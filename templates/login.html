@@ -1,0 +1,18 @@
+{% extends "baza.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-4">
+
+        <form method="POST" class="card p-4 shadow">
+            <h3 class="text-center mb-3">Вхождейшен</h3>
+
+            <input class="form-control mb-2" name="username" placeholder="Логин">
+            <input class="form-control mb-3" type="password" name="password" placeholder="Пароль">
+
+            <button class="btn btn-primary w-100">Зайти</button>
+        </form>
+
+    </div>
+</div>
+{% endblock %}
